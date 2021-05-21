@@ -4,8 +4,7 @@ body{
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    background-color: #E3E6EC;
-    background-image: url(blog/bgcircle.svg);
+    background-image: url("../images/bgcircle.svg");
     background-repeat: no-repeat;
     background-position: top center;
     counter-reset: chapter;
@@ -13,6 +12,10 @@ body{
 
 a{
     text-decoration: none;
+}
+
+h3 {
+    text-align: center;
 }
 
 hr {

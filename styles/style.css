@@ -8,8 +8,7 @@ body {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    background-color: #E3E6EC;
-    background-image: url('images/bgcircle.svg');
+    background: url("../images/bgcircle.svg");
     background-repeat: no-repeat;
     background-position: top center ;
 }
