@@ -1,0 +1,286 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#1a1b1f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    background-color: #E3E6EC;
+    background-image: url(blog/bgcircle.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    counter-reset: chapter;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr {
+    font-size: 2em;
+    text-align: center;
+    counter-increment: chapter;
+}
+
+hr::before {
+    content: 'Chapter ' counter(chapter, upper-roman);
+    display: block;
+    text-align: center;
+    background-color: #e1eedd;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    letter-spacing: .05em;
+  }
+  
+  hr:hover, hr:focus {
+    border-bottom-color: rgba(255, 255, 255, .8);
+    outline: none;
+  }
+  
+  hr:not(:focus) {
+    cursor: pointer;
+  }
+
+  hr:focus ~ p {
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .2);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  hr ~ p, hr:focus ~ hr ~ p {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+p.quote {
+  text-align: center;
+}
+
+.marginheader{
+    height: 80px;
+}
+
+.container{
+}
+
+.blog-title{
+    font-weight: 600;
+    font-size: 120px;
+    line-height: 150px;
+    letter-spacing: -1px;
+    margin-bottom: 80px;
+    color:#121212;
+    border-bottom:3px solid #000000;
+    padding:15px 0px 90px;
+}
+
+.blog-title img{
+    width:100%;
+}
+
+.listartikel_tanggalmenulisartikel{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom:16px;
+}
+
+.listartikel_judulartikel{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    color: #121212;
+    margin-bottom:16px;
+}
+
+.small_synopsis {
+    font-size: 16px;
+    line-height: 26px;
+    color: #323947;
+    font-weight: 200;
+    display:flex;
+    flex-wrap: wrap;
+}
+.thumbnailarticle{
+    background: #f5f6f8;
+    
+    border-radius: 8px;
+    overflow: hidden;
+}
+.thumbnailarticle img{
+    width: 100%;
+}
+
+.contentartikel{
+    padding:30px 20px 40px 20px;
+}
+.listartikel{
+    margin-bottom:20px;
+    padding:0px 12px;
+    text-align: center;
+}
+
+
+
+.featuredarticle {
+    margin-bottom:40px;
+    padding:0px 12px;
+    text-align: left;
+}
+.contentfeaturedarticle{
+    padding:10px 20px 40px 20px;
+}
+
+.featured_article{
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: #121212;
+    margin-bottom:16px;
+}
+
+.contentsmallartikel{
+    padding:30px 20px 40px 0px;
+    text-align: left;
+}
+
+.small_judulartikel{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    color: #121212;
+    margin-bottom:16px;
+}
+
+.small_synopsis{
+    font-size: 15px;
+    line-height: 25px;
+    color: #323947;
+    font-weight: 200;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .container{
+       padding-right:40px;
+       padding-left:40px;
+    }
+
+    .featured_article{
+        
+        font-size: 50px;
+        line-height: 50px;
+        
+    }
+
+   
+}
+
+@media only screen and (max-width: 1024px){
+    .listartikel_judulartikel{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .featured_article {
+        
+        font-size: 43px;
+        line-height: 43px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 991px){
+    .featured_article {
+        margin-bottom:20px;
+        padding:0px 12px;
+        text-align: left;
+    }
+    .contentfeaturedarticle {
+        padding:30px 20px 40px 0px;
+        text-align: left;
+    }
+    
+    .featured_article{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0px;
+        color: #121212;
+        margin-bottom:16px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+    .listartikel_judulartikel{
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    body{
+        background-size: 190%;
+    }
+
+    .marginheader {
+        height: 53px;
+    }
+
+    .contentartikel{
+        padding:30px 0px 40px 0px;
+    }
+    
+    .container{
+        padding-right:16px;
+        padding-left:16px;
+     }
+   
+    
+    .blog-title{
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 50px;
+        padding-top:0px;
+        padding-bottom:50px;
+        text-align: center;
+    }
+    
+    .listartikel_tanggalmenulisartikel{
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+        opacity: 0.5;
+        margin-bottom:15px;
+    }
+    
+    .listartikel_judulartikel{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 400;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
